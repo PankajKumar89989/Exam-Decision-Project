@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "laya": {
+      "type": "http",
+      "url": "https://api.laya.studio/mcp",
+      "headers": { "Authorization": "Bearer lsk_live_vRw9wqwKgGHLJtLgRG6GosilGu4Sup09" }
+    }
+  }
+}

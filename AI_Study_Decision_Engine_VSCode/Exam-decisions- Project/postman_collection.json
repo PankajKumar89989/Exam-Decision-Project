@@ -1,0 +1,64 @@
+{
+  "info": {
+    "name": "AI Study Decision Engine API",
+    "description": "Local FastAPI collection for the AI Study Decision Engine",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/health",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "health"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Study Decision",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"hours\": 3,\n  \"exam_days\": 2,\n  \"topics_remaining\": 3,\n  \"difficulty\": \"High\",\n  \"energy\": \"High\",\n  \"important_topic\": \"Yes\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/decision",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "decision"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
